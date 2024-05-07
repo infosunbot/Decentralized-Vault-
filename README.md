@@ -16,7 +16,4 @@ The depositETH function strictly handles the deposit of ETH without converting i
 The wrapToWETH function allows users to convert their deposited ETH to WETH within the Vault.
 
 
-depositToken and withdrawToken functions tested with my pre-deployed an ERC-20 token before. 
-My ERC20 token address: 0xd2B2a85EA14276a62cc3ec8C2695647207109DF1
-
 The contract's fallback receive function now restricts direct ETH transfers, ensuring that ETH can only be sent to it via the WETH contract during unwrapping operations. This adds a safety check against unintended direct deposits.
